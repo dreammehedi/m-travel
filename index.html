@@ -52,9 +52,20 @@
       rel="stylesheet"
       type="text/css"
     />
+    <!-- Tailwind Some Class Add -->
+    <style type="text/tailwindcss">
+      @layer utilities {
+        .mybtn {
+          @apply font-raleway font-bold rounded-2xl py-4 px-[30px] border text-[20px];
+          line-height: 23px;
+        }
+      }
+    </style>
 
     <!-- Tailwind Css Install -->
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Tailwind Some Variable Add -->
     <script>
       tailwind.config = {
         theme: {
@@ -62,9 +73,17 @@
             roboto: ["Roboto", "sans-serif"],
             raleway: ["Raleway", "sans-serif"],
           },
+          container: {
+            center: true,
+            padding: {
+              DEFAULT: "2rem",
+            },
+          },
           extend: {
             colors: {
-              clifford: "#da373d",
+              "logo-color": "rgb(3, 7, 18)",
+              "menu-item": "rgba(3, 7, 18, 0.7)",
+              green: "rgb(29, 209, 0)",
             },
           },
         },
@@ -77,7 +96,84 @@
 
   <!-- ******************* Start Body Tag ***************** -->
   <body class="font-raleway">
-    <h3>Mehedi</h3>
+    <!-- Header Start -->
+    <header class="bg-white relative">
+      <!-- Navbar -->
+      <nav class="container flex justify-between items-center py-5 lg:py-10">
+        <!-- logo -->
+        <div id="logo">
+          <a
+            class="font-extrabold text-3xl md:text-3xl lg:text-4xl text-logo-color"
+            href="./index.html"
+            >M-Ticket</a
+          >
+        </div>
+        <!-- Menu -->
+        <ul
+          id="menu"
+          class="hidden lg:flex place-content-center gap-10 *:text-menu-item *:text-[18px] *:font-medium *:cursor-pointer *:capitalize"
+        >
+          <li
+            class="menu-item transition-colors duration-300 ease-linear hover:text-green"
+          >
+            Home
+          </li>
+          <li
+            class="menu-item transition-colors duration-300 ease-linear hover:text-green"
+          >
+            About
+          </li>
+          <li
+            class="menu-item transition-colors duration-300 ease-linear hover:text-green"
+          >
+            Destination
+          </li>
+          <li
+            class="menu-item transition-colors duration-300 ease-linear hover:text-green"
+          >
+            Search
+          </li>
+        </ul>
+        <!-- Mobile, Tablet Menu -->
+        <ul
+          id="menu"
+          class="flex flex-col justify-start items-start gap-10 *:text-menu-item *:text-[18px] *:font-medium *:cursor-pointer *:capitalize absolute top-0 -left-full w-1/2 h-screen bg-red-50 pl-[40px] pt-[80px] z-30"
+        >
+          <li
+            class="menu-item transition-colors duration-300 ease-linear hover:text-green"
+          >
+            Home
+          </li>
+          <li
+            class="menu-item transition-colors duration-300 ease-linear hover:text-green"
+          >
+            About
+          </li>
+          <li
+            class="menu-item transition-colors duration-300 ease-linear hover:text-green"
+          >
+            Destination
+          </li>
+          <li
+            class="menu-item transition-colors duration-300 ease-linear hover:text-green"
+          >
+            Search
+          </li>
+        </ul>
+        <!-- Bus Button -->
+        <button
+          class="flex justify-center items-center mybtn border-green text-green bg-green/10 transition-colors duration-300 ease-linear hover:bg-transparent"
+        >
+          Bus<i class="ml-2 fa-solid fa-van-shuttle"></i>
+        </button>
+        <!-- Toggle Bar -->
+        <div id="menu-toggle">
+          <i
+            class="text-[25px] lg:hidden cursor-pointer font-extrabold transition-colors duration-300 ease-linear hover:text-green ri-menu-3-fill"
+          ></i>
+        </div>
+      </nav>
+    </header>
   </body>
   <!-- Font Awesome Javascript -->
   <script
