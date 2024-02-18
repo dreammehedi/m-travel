@@ -1,6 +1,12 @@
 // Sets Target
 const sets = document.querySelectorAll(".set");
 
+// Available Sets Value Dynamic
+const setAvailableValue = Number(
+  document.getElementById("available-seat").innerText
+);
+document.getElementById("available-seat").innerText = sets.length;
+
 for (const set of sets) {
   set.addEventListener("click", function (e) {
     // Select Current Set
@@ -13,7 +19,6 @@ for (const set of sets) {
     let availableSets = Number(
       document.getElementById("available-seat").innerText
     );
-
     // Calculate Available Sets
     let availableSetsDown = availableSets - 1;
 
@@ -39,28 +44,30 @@ for (const set of sets) {
     );
     // Find Selected Seat Row
     const findSelectedSeatRow = document.getElementById("selected-seat-body");
+
+    // Crate Table Row And Style Add
     const tr = document.createElement("tr");
     tr.classList.add("*:text-[#03071299]", "*:text-base", "*:font-normal");
+
+    // Create Multiple Table Data And Style Add
     const td1 = document.createElement("td");
     const td2 = document.createElement("td");
     const td3 = document.createElement("td");
     td3.classList.add("text-end");
+
+    // Assign Value Table Data
     td1.innerText = currentValue;
     td2.innerText = "Economoy";
     td3.innerText = perSetPrice;
+
+    // Assign Table Data In Parent Element
     tr.appendChild(td1);
     tr.appendChild(td2);
     tr.appendChild(td3);
     findSelectedSeatRow.appendChild(tr);
+
+    // Find Total Price
+    const totalPrice = Number(document.getElementById("total-price").innerText);
+    document.getElementById("total-price").innerText = totalPrice + perSetPrice;
   });
 }
-// if (!selectedProducts.has(productId)) {
-//   // Check if product is not already selected
-//   selectedProducts.add(productId); // Add product to selected set
-//   const productName = this.parentElement.textContent.trim();
-//   const listItem = document.createElement("li");
-//   listItem.textContent = productName;
-//   document.getElementById("selectedProducts").appendChild(listItem);
-// } else {
-//   alert("This product is already selected.");
-// }

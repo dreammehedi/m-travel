@@ -339,7 +339,7 @@
           <div
             class="flex flex-col justify-center items-center text-center gap-2"
           >
-            <h2 id="coupon15" class="text-xl md:text-3xl font-bold">
+            <h2 id="coupon20" class="text-xl md:text-3xl font-bold">
               Couple 20
             </h2>
             <p class="p !font-medium !text-base md:!text-xl text-[#03071266]">
@@ -411,7 +411,7 @@
                   src="./images/seat-green.png"
                   alt="seat-green"
                 />
-                <span id="available-seat" class="mr-1"> 40 </span>
+                <span id="available-seat" class="mr-1"> 0 </span>
                 Seats left
               </button>
             </div>
@@ -800,20 +800,22 @@
                 class="flex justify-between items-center my-4 font-inter *:font-medium *:text-base *:text-[#030712]"
               >
                 <h4>Total Price</h4>
-                <h4>BDT <span id="total-price">1100</span></h4>
+                <h4>BDT <span id="total-price">0</span></h4>
               </div>
 
               <!-- Have A Coupon -->
               <div class="font-inter relative">
                 <input
+                  id="coupon-field"
                   class="w-full py-4 placeholder:font-inter placeholder:text-sm placeholder:text-[#03071266] bg-white rounded-xl p-5 border-none outline-1 outline-green"
                   type="text"
                   placeholder="Have any copupon?"
                 />
                 <button
+                  id="apply-coupon"
                   disabled
                   type="submit"
-                  class="absolute top-1/2 right-2 z-10 -translate-y-1/2 !py-[10px] !px-4 mybtn bg-green text-white hover:bg-green/10 transition-colors duration-300 ease-linear hover:text-secondary-black hover:border-green"
+                  class="absolute top-1/2 right-2 z-10 -translate-y-1/2 !py-[10px] !px-4 mybtn bg-gray-300 text-white hover:bg-green/10 transition-colors duration-300 ease-linear hover:text-secondary-black hover:border-green"
                 >
                   Apply
                 </button>
@@ -824,7 +826,7 @@
                 class="flex justify-between items-center my-4 font-inter *:font-medium *:text-base *:text-[#030712]"
               >
                 <h4>Grand Total</h4>
-                <h4>BDT <span id="grand-total-price">1100</span></h4>
+                <h4>BDT <span id="grand-total-price">0</span></h4>
               </div>
             </div>
 
@@ -994,5 +996,6 @@
   <!-- Main Javascript File -->
   <script src="./js/navbar.js"></script>
   <script src="./js/utility.js"></script>
+  <script src="./js/coupon.js"></script>
   <script src="./js/main.js"></script>
 </html>
