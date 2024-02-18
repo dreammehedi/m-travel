@@ -478,7 +478,7 @@
 
         <!-- Mehedi Paribahan Seat Booking -->
         <div
-          class="mt-6 bg-white rounded-3xl p-8 grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-6"
+          class="mt-6 bg-white rounded-3xl p-8 grid grid-cols-1 lg:grid-cols-2"
         >
           <!-- Select Your Seat -->
           <div
@@ -486,14 +486,14 @@
           >
             <!-- Title -->
             <h2
-              class="font-semibold text-secondary-black text-xl md:text-2xl mb-5"
+              class="font-semibold text-secondary-black text-xl md:text-2xl mb-5 border-b-2 border-gray-300 border-dashed pb-5"
             >
               Select Your Seat
             </h2>
 
             <!-- Available Or Selected -->
             <div
-              class="flex justify-between items-center gap-4 border-t-2 border-b-2 border-gray-300 border-dashed py-5"
+              class="flex justify-between items-center gap-4 border-b-2 border-gray-300 border-dashed pb-5"
             >
               <!-- Available -->
               <button
@@ -755,6 +755,7 @@
                   I4
                 </button>
               </div>
+
               <!-- J Seat List -->
               <div
                 class="flex flex-wrap justify-between gap-2 items-center *:bg-[#F7F8F8] *:text-[#03071280] *:capitalize *:py-4 *:px-8 *:rounded-xl *:font-medium *:text-[18px] *:font-inter *:transition-colors *:duration-300 *:ease-linear"
@@ -781,8 +782,75 @@
               </div>
             </div>
           </div>
+
           <!-- Select Your Seat Detailes -->
-          <div class="p-8">dfa</div>
+          <div class="p-8">
+            <!-- Title -->
+            <h2
+              class="font-semibold text-secondary-black text-xl md:text-2xl mb-5 pb-5 border-b-2 border-gray-300 border-dashed"
+            >
+              Select Your Seat
+            </h2>
+
+            <!-- Calculate Seat Detailes -->
+            <div class="bg-[#F7F8F8] rounded-xl p-8">
+              <table class="w-full !font-inter text-left">
+                <thead class="border-b-2 border-gray-300 border-dashed">
+                  <tr class="*:font-medium *:text-base *:pb-4 *:text-[#030712]">
+                    <th>
+                      Seat<span id="selected-seat" class="font-bold text-sm"
+                        >2</span
+                      >
+                    </th>
+                    <th>Class</th>
+                    <th class="text-end">Price</th>
+                  </tr>
+                </thead>
+                <tbody class="text-left border-b border-gray-300">
+                  <tr class="*:text-[#03071299] *:text-base *:font-normal">
+                    <td class="py-2">C2</td>
+                    <td class="py-2">Economoy</td>
+                    <td class="py-2 text-end">550</td>
+                  </tr>
+                  <tr class="*:text-[#03071299] *:text-base *:font-normal">
+                    <td class="py-2">C2</td>
+                    <td class="py-2">Economoy</td>
+                    <td class="py-2 text-end">550</td>
+                  </tr>
+                </tbody>
+              </table>
+              <!-- Total Calculate Price -->
+              <div
+                class="flex justify-between items-center my-4 font-inter *:font-medium *:text-base *:text-[#030712]"
+              >
+                <h4>Total Price</h4>
+                <h4>BDT <span id="total-price">1100</span></h4>
+              </div>
+
+              <!-- Have A Coupon -->
+              <div class="font-inter relative">
+                <input
+                  class="w-full py-4 placeholder:font-inter placeholder:text-sm bg-white rounded-xl p-5 border-none outline-1 outline-green"
+                  type="text"
+                  placeholder="Have any copupon?"
+                />
+                <button
+                  type="submit"
+                  class="absolute top-1/2 right-2 z-10 -translate-y-1/2 !py-[10px] !px-4 mybtn bg-green text-white hover:bg-green/10 transition-colors duration-300 ease-linear hover:text-secondary-black hover:border-green"
+                >
+                  Apply
+                </button>
+              </div>
+
+              <!-- Total Discount Calculate Price -->
+              <div
+                class="flex justify-between items-center my-4 font-inter *:font-medium *:text-base *:text-[#030712]"
+              >
+                <h4>Grand Total</h4>
+                <h4>BDT <span id="grand-total-price">1100</span></h4>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
