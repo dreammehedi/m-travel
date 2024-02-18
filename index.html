@@ -56,7 +56,7 @@
     <style type="text/tailwindcss">
       @layer utilities {
         .mybtn {
-          @apply font-raleway font-bold rounded-2xl py-4 px-[30px] border text-[20px];
+          @apply font-raleway font-bold rounded-2xl py-4 px-[30px] border text-xl;
           line-height: 23px;
         }
         .p {
@@ -173,7 +173,7 @@
           class="flex justify-center items-center mybtn border-green text-green bg-green/10 transition-colors duration-300 ease-linear hover:bg-transparent"
         >
           Bus<img
-            class="ml-2 border border-gray-300 border-dotted"
+            class="ml-2 border border-gray-300 border-dashed"
             src="./images/bus-icon.png"
             alt="bus"
           />
@@ -234,7 +234,7 @@
         class="flex justify-center items-center bg-green/10 lg:bg-white py-8 px-10 rounded-3xl gap-4 font-inter border-b-[3px] border-green"
       >
         <img
-          class="border border-gray-300 border-dotted cursor-pointer"
+          class="border border-gray-300 border-dashed cursor-pointer"
           src="./images/people.png"
           alt="People"
         />
@@ -248,7 +248,7 @@
         class="flex justify-center items-center bg-green/10 lg:bg-white py-8 px-10 rounded-3xl gap-4 font-inter border-b-[3px] border-green"
       >
         <img
-          class="border border-gray-300 border-dotted cursor-pointer"
+          class="border border-gray-300 border-dashed cursor-pointer"
           src="./images/ticket-cupon.png"
           alt="Cupon"
         />
@@ -262,7 +262,7 @@
         class="flex justify-center items-center bg-green/10 lg:bg-white py-8 px-10 rounded-3xl gap-4 font-inter border-b-[3px] border-green"
       >
         <img
-          class="border border-gray-300 border-dotted cursor-pointer"
+          class="border border-gray-300 border-dashed cursor-pointer"
           src="./images/stoppage.png"
           alt="Stoppage"
         />
@@ -285,10 +285,10 @@
         >
           <!-- Content -->
           <div class="font-inter flex flex-col space-y-2 text-[#030712CC]">
-            <h2 class="text-[20px] md:text-4xl lg:text-[40px] font-black">
+            <h2 class="text-xl md:text-4xl lg:text-[40px] font-black">
               <span id="off15">15</span>% OFF
             </h2>
-            <h3 class="text-base md:text-[20px] font-semibold">
+            <h3 class="text-base md:text-xl font-semibold">
               on your next purchase
             </h3>
             <p class="p !font-medium text-[#03071280]">use by January 2024</p>
@@ -303,12 +303,8 @@
           <div
             class="flex flex-col justify-center items-center text-center gap-2"
           >
-            <h2 id="coupon15" class="text-[20px] md:text-3xl font-bold">
-              NEW15
-            </h2>
-            <p
-              class="p !font-medium !text-base md:!text-[20px] text-[#03071266]"
-            >
+            <h2 id="coupon15" class="text-xl md:text-3xl font-bold">NEW15</h2>
+            <p class="p !font-medium !text-base md:!text-xl text-[#03071266]">
               Coupon Code
             </p>
           </div>
@@ -320,10 +316,10 @@
         >
           <!-- Content -->
           <div class="font-inter flex flex-col space-y-2 text-[#030712CC]">
-            <h2 class="text-[20px] md:text-4xl lg:text-[40px] font-black">
+            <h2 class="text-xl md:text-4xl lg:text-[40px] font-black">
               <span id="off15">20</span>% OFF
             </h2>
-            <h3 class="text-base md:text-[20px] font-semibold">
+            <h3 class="text-base md:text-xl font-semibold">
               on your next purchase
             </h3>
             <p class="p !font-medium text-[#03071280]">use by January 2024</p>
@@ -338,12 +334,10 @@
           <div
             class="flex flex-col justify-center items-center text-center gap-2"
           >
-            <h2 id="coupon15" class="text-[20px] md:text-3xl font-bold">
+            <h2 id="coupon15" class="text-xl md:text-3xl font-bold">
               Couple 20
             </h2>
-            <p
-              class="p !font-medium !text-base md:!text-[20px] text-[#03071266]"
-            >
+            <p class="p !font-medium !text-base md:!text-xl text-[#03071266]">
               Coupon Code
             </p>
           </div>
@@ -360,7 +354,7 @@
     <!-- M.Paribahan -->
     <section
       style="border-radius: 88px 88px 0px 0px"
-      class="my-20 py-[120px] bg-[#F7F8F8] border-t-2 border-green"
+      class="my-20 py-[60px] md:py-[90px] lg:py-[120px] bg-[#F7F8F8] border-t-2 border-green"
     >
       <div class="container">
         <!-- M.Paribahan Title -->
@@ -375,6 +369,103 @@
             ensures a comfortable and reliable travel experience for passengers
             of all destinations.
           </p>
+        </div>
+
+        <!-- Mehedi Paribahan -->
+        <div
+          class="bg-white rounded-3xl px-8 mt-12 flex justify-between items-center gap-2 md:gap-4"
+        >
+          <!-- Mehedi Paribahan Title Description -->
+          <div>
+            <div class="flex justify-between items-center">
+              <!-- Paribahan -->
+              <div class="flex justify-between items-center gap-4">
+                <!-- Bus Logo -->
+                <img src="./images/bus-logo.png" alt="bus-logo" />
+                <!-- Bus Name Desc -->
+                <div class="flex flex-col justify-start space-y-2">
+                  <h2
+                    class="text-secondary-black font-bold text-2xl md:text-3xl"
+                  >
+                    Greenline Paribahan
+                  </h2>
+                  <p class="p !font-inter text-[#03071299]">
+                    Coach-009-WEB ! AC_Business
+                  </p>
+                </div>
+              </div>
+              <!-- Seat Book Btn -->
+              <button
+                class="!font-inter flex justify-center items-center mybtn border-green text-green bg-green/10 transition-colors duration-300 ease-linear hover:bg-transparent"
+              >
+                <img
+                  class="mr-2 border border-gray-300 border-dashed"
+                  src="./images/seat-green.png"
+                  alt="seat-green"
+                />
+                <span id="available-seat">40 </span>
+                Seats left
+              </button>
+            </div>
+            <!-- Paribahan Detailes -->
+            <div class="p-8 mt-5 bg-[#F7F8F8] rounded-3xl flex flex-col gap-4">
+              <!-- Route -->
+              <div
+                class="flex justify-between items-center py-4 border-b border-gray-300 border-dashed"
+              >
+                <p class="font-semibold text-[18px] text-[#03071299]">Route</p>
+                <p class="font-semibold text-[18px] text-secondary-black">
+                  Dhaka - Sylhet
+                </p>
+              </div>
+
+              <!-- Departure Time -->
+              <div
+                class="flex justify-between items-center py-4 border-b border-gray-300 border-dashed"
+              >
+                <p class="font-semibold text-[18px] text-[#03071299]">
+                  Departure Time
+                </p>
+                <p class="font-semibold text-[18px] text-secondary-black">
+                  9:00 PM
+                </p>
+              </div>
+
+              <!-- Paribahan Places -->
+              <div class="flex justify-between items-center gap-4 md:gap-6">
+                <button
+                  class="mybtn !text-base !font-medium !font-inter bg-[#0307120D] text-[#030712CC] transition-colors duration-300 ease-linear hover:bg-green/10 hover:text-green hover:border-green"
+                >
+                  Boarding Point - Laxmipur
+                </button>
+                <button
+                  class="mybtn !text-base !font-medium !font-inter bg-[#0307120D] text-[#030712CC] transition-colors duration-300 ease-linear hover:bg-green/10 hover:text-green hover:border-green"
+                >
+                  Dropping Point - Bogura</button
+                ><button
+                  class="mybtn !text-base !font-medium !font-inter bg-[#0307120D] text-[#030712CC] transition-colors duration-300 ease-linear hover:bg-green/10 hover:text-green hover:border-green"
+                >
+                  Est. Time - 11 Hour
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- Devider -->
+          <img src="./images/info-devider.png" alt="info-devider" />
+          <!-- Paribahan Parice -->
+          <div
+            class="flex flex-col justify-center items-center text-center space-y-3"
+          >
+            <img
+              class="border border-gray-300 border-dashed"
+              src="./images/fare.png"
+              alt="taka"
+            />
+            <h3 class="font-bold text-3xl text-secondary-black">550 Taka</h3>
+            <strong class="font-semibold text-2xl text-[#03071299]"
+              >Per Seat</strong
+            >
+          </div>
         </div>
       </div>
     </section>
