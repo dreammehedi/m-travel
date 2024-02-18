@@ -65,6 +65,9 @@
         .s-title {
           @apply font-raleway text-center font-bold text-3xl md:text-4xl lg:text-[40px] text-secondary-black;
         }
+        .show-menu {
+          @apply opacity-100 left-0;
+        }
       }
     </style>
 
@@ -105,7 +108,7 @@
   <!-- ******************* Start Body Tag ***************** -->
   <body class="font-raleway">
     <!-- Header Start -->
-    <header class="bg-white">
+    <header id="header" class="bg-white">
       <!-- Navbar -->
       <nav class="container flex justify-between items-center py-5 lg:py-8">
         <!-- logo -->
@@ -118,7 +121,6 @@
         </div>
         <!-- Menu -->
         <ul
-          id="menu"
           class="hidden lg:flex place-content-center gap-10 *:text-menu-item *:text-[18px] *:font-medium *:cursor-pointer *:capitalize"
         >
           <li
@@ -142,29 +144,18 @@
             Search
           </li>
         </ul>
+
         <!-- Mobile, Tablet Menu -->
         <ul
-          id="menu"
-          class="flex flex-col justify-start items-start gap-10 *:text-menu-item *:text-[18px] *:font-medium *:cursor-pointer *:capitalize absolute top-0 -left-full w-1/2 h-screen bg-red-50 pl-[40px] pt-[80px] z-30"
+          id="mobile-tablet-menu"
+          class="flex flex-col justify-start items-start gap-10 *:text-[18px] *:font-medium *:cursor-pointer *:capitalize fixed opacity-0 top-0 -left-full w-1/2 h-screen bg-green pl-[40px] pt-[80px] z-30 transition-all duration-300 ease-linear shadow-[0px_4px_16px_rgba(17,17,26,0.1),_0px_8px_24px_rgba(17,17,26,0.1),_0px_16px_56px_rgba(17,17,26,0.1)] *:transition-colors *:duration-300 *:ease-linear"
         >
-          <li
-            class="menu-item transition-colors duration-300 ease-linear hover:text-green"
-          >
-            Home
-          </li>
-          <li
-            class="menu-item transition-colors duration-300 ease-linear hover:text-green"
-          >
-            About
-          </li>
-          <li
-            class="menu-item transition-colors duration-300 ease-linear hover:text-green"
-          >
+          <li class="menu-item text-white hover:text-secondary-black">Home</li>
+          <li class="menu-item text-white hover:text-secondary-black">About</li>
+          <li class="menu-item text-white hover:text-secondary-black">
             Destination
           </li>
-          <li
-            class="menu-item transition-colors duration-300 ease-linear hover:text-green"
-          >
+          <li class="menu-item text-white hover:text-secondary-black">
             Search
           </li>
         </ul>
