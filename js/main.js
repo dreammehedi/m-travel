@@ -7,6 +7,10 @@ const setAvailableValue = Number(
 );
 document.getElementById("available-seat").innerText = sets.length;
 
+// Check How Much Set Are Selected
+let selectedSetCount = 0;
+
+// All Sets Are Count
 for (const set of sets) {
   set.addEventListener("click", function (e) {
     // Select Current Set
@@ -15,6 +19,17 @@ for (const set of sets) {
     // Validate Set Are Selected
     currentElement.disabled = true;
 
+    // Check How Much Set Are Selected
+    selectedSetCount += 1;
+    if (selectedSetCount >= 4) {
+      alert(
+        `You Are Already 4 Set Selected! Only One Person Can Buy Maximam 4 Set.`
+      );
+      const sets = document.querySelectorAll(".set");
+      for (const set of sets) {
+        set.disabled = true;
+      }
+    }
     // Current Set Selected
     currentElement.classList.add("!bg-green", "!text-white");
 
