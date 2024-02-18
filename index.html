@@ -62,6 +62,9 @@
         .p {
           @apply font-normal text-[18px] font-inter;
         }
+        .s-title {
+          @apply font-raleway text-center font-bold text-3xl md:text-4xl lg:text-[40px] text-secondary-black;
+        }
       }
     </style>
 
@@ -88,6 +91,7 @@
               "logo-color": "rgb(3, 7, 18)",
               "menu-item": "rgba(3, 7, 18, 0.7)",
               green: "rgb(29, 209, 0)",
+              "secondary-black": "rgb(3, 7, 18)",
             },
           },
         },
@@ -211,7 +215,7 @@
                 entertainment options.
               </p>
               <button
-                class="mybtn mx-auto text-[#030712] bg-green border-green transition-colors duration-300 ease-linear hover:bg-transparent hover:text-green"
+                class="mybtn mx-auto text-secondary-black bg-green border-green transition-colors duration-300 ease-linear hover:bg-transparent hover:text-green"
               >
                 Buy Tickets
               </button>
@@ -222,8 +226,8 @@
     </header>
 
     <!-- Tickets Registration User, Ticket Sold, Rental Partners -->
-    <div
-      class="container flex flex-wrap justify-center items-center gap-4 md:gap-8 my-8 lg:-mt-[70px]"
+    <section
+      class="my-20 container flex flex-wrap justify-center items-center gap-4 md:gap-8 lg:-mt-[70px]"
     >
       <!-- Tickets Registration -->
       <div
@@ -235,7 +239,7 @@
           alt="People"
         />
         <div class="flex flex-col justify-start">
-          <h3 class="text-[#030712] font-bold text-4xl">500K+</h3>
+          <h3 class="text-secondary-black font-bold text-4xl">500K+</h3>
           <p class="p text-[#03071299]">Registered users</p>
         </div>
       </div>
@@ -249,7 +253,7 @@
           alt="Cupon"
         />
         <div class="flex flex-col justify-start">
-          <h3 class="text-[#030712] font-bold text-4xl">1.7 lacks</h3>
+          <h3 class="text-secondary-black font-bold text-4xl">1.7 lacks</h3>
           <p class="p text-[#03071299]">Ticket Sold</p>
         </div>
       </div>
@@ -263,11 +267,88 @@
           alt="Stoppage"
         />
         <div class="flex flex-col justify-start">
-          <h3 class="text-[#030712] font-bold text-4xl">80K+</h3>
+          <h3 class="text-secondary-black font-bold text-4xl">80K+</h3>
           <p class="p text-[#03071299]">Rental partners</p>
         </div>
       </div>
-    </div>
+    </section>
+
+    <!-- Best Offers -->
+    <section class="my-20 container">
+      <h1 class="s-title mb-12">Best offers for you</h1>
+      <!-- Discount Coupon -->
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 md:gap-8">
+        <!-- 15% OFF -->
+        <div
+          class="bg-[#FFBF0F] rounded-3xl px-12 flex justify-between items-center"
+        >
+          <!-- Content -->
+          <div class="font-inter flex flex-col space-y-2 text-[#030712CC]">
+            <h2 class="text-[20px] md:text-4xl lg:text-[40px] font-black">
+              <span id="off15">15</span>% OFF
+            </h2>
+            <h3 class="text-base md:text-[20px] font-semibold">
+              on your next purchase
+            </h3>
+            <p class="p !font-medium text-[#03071280]">use by January 2024</p>
+          </div>
+          <!-- Devider -->
+          <img
+            class="min-h-[200px]"
+            src="./images/cupon-devider.png"
+            alt="coupon devider"
+          />
+          <!-- Coupon -->
+          <div
+            class="flex flex-col justify-center items-center text-center gap-2"
+          >
+            <h2 id="coupon15" class="text-[20px] md:text-3xl font-bold">
+              NEW15
+            </h2>
+            <p
+              class="p !font-medium !text-base md:!text-[20px] text-[#03071266]"
+            >
+              Coupon Code
+            </p>
+          </div>
+        </div>
+
+        <!-- 20% OFF -->
+        <div
+          class="bg-[#F78C9C] rounded-3xl px-12 flex justify-between items-center"
+        >
+          <!-- Content -->
+          <div class="font-inter flex flex-col space-y-2 text-[#030712CC]">
+            <h2 class="text-[20px] md:text-4xl lg:text-[40px] font-black">
+              <span id="off15">20</span>% OFF
+            </h2>
+            <h3 class="text-base md:text-[20px] font-semibold">
+              on your next purchase
+            </h3>
+            <p class="p !font-medium text-[#03071280]">use by January 2024</p>
+          </div>
+          <!-- Devider -->
+          <img
+            class="min-h-[200px]"
+            src="./images/cupon-devider.png"
+            alt="coupon devider"
+          />
+          <!-- Coupon -->
+          <div
+            class="flex flex-col justify-center items-center text-center gap-2"
+          >
+            <h2 id="coupon15" class="text-[20px] md:text-3xl font-bold">
+              Couple 20
+            </h2>
+            <p
+              class="p !font-medium !text-base md:!text-[20px] text-[#03071266]"
+            >
+              Coupon Code
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
   </body>
   <!-- Font Awesome Javascript -->
   <script
