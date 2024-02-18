@@ -71,7 +71,7 @@ for (const set of sets) {
     const td1 = document.createElement("td");
     const td2 = document.createElement("td");
     const td3 = document.createElement("td");
-    td3.classList.add("text-end");
+    td3.classList.add("text-end", "py-1");
 
     // Assign Value Table Data
     td1.innerText = currentValue;
