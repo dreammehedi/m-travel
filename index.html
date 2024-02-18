@@ -25,7 +25,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
     />
     <!-- Website Font Awesome Icons -->
@@ -59,6 +59,9 @@
           @apply font-raleway font-bold rounded-2xl py-4 px-[30px] border text-[20px];
           line-height: 23px;
         }
+        .p {
+          @apply font-normal text-[18px] font-inter;
+        }
       }
     </style>
 
@@ -72,6 +75,7 @@
           fontFamily: {
             roboto: ["Roboto", "sans-serif"],
             raleway: ["Raleway", "sans-serif"],
+            inter: ["Inter", "sans-serif"],
           },
           container: {
             center: true,
@@ -97,9 +101,9 @@
   <!-- ******************* Start Body Tag ***************** -->
   <body class="font-raleway">
     <!-- Header Start -->
-    <header class="bg-white relative">
+    <header class="bg-white">
       <!-- Navbar -->
-      <nav class="container flex justify-between items-center py-5 lg:py-10">
+      <nav class="container flex justify-between items-center py-5 lg:py-8">
         <!-- logo -->
         <div id="logo">
           <a
@@ -164,7 +168,11 @@
         <button
           class="flex justify-center items-center mybtn border-green text-green bg-green/10 transition-colors duration-300 ease-linear hover:bg-transparent"
         >
-          Bus<i class="ml-2 fa-solid fa-van-shuttle"></i>
+          Bus<img
+            class="ml-2 border border-gray-300 border-dotted"
+            src="./images/bus-icon.png"
+            alt="bus"
+          />
         </button>
         <!-- Toggle Bar -->
         <div id="menu-toggle">
@@ -173,6 +181,44 @@
           ></i>
         </div>
       </nav>
+
+      <!-- Hero -->
+      <div id="hero" class="container">
+        <div
+          class="hero !bg-no-repeat !bg-bottom !bg-cover rounded-[32px] h-[500px]"
+          style="
+            background: linear-gradient(
+                180deg,
+                rgba(3, 7, 18, 0.5),
+                rgba(3, 7, 18, 0) 100%
+              ),
+              url(./images/banner.png);
+          "
+        >
+          <div class="">
+            <div
+              class="md:max-w-3xl px-4 lg:px-0 flex flex-col place-content-center text-center space-y-4"
+            >
+              <div
+                class="flex flex-col justify-center items-center text-center gap-2 md:gap-3 lg:gap-4 text-4xl md:text-5xl lg:text-[64px] font-extrabold text-white cursor-pointer"
+              >
+                <h2 class="">End-to-End Travel with</h2>
+                <h2 class="text-green">M Paribahan</h2>
+              </div>
+              <p class="p text-white">
+                Enjoy the comfort of M Paribahan's buses which are equipped with
+                amenities like air conditioning, reclining seats, and
+                entertainment options.
+              </p>
+              <button
+                class="mybtn mx-auto text-[#030712] bg-green border-green transition-colors duration-300 ease-linear hover:bg-transparent hover:text-green"
+              >
+                Buy Tickets
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
     </header>
   </body>
   <!-- Font Awesome Javascript -->
