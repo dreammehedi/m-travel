@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="light">
+<html lang="en" data-theme="light" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -68,6 +68,9 @@
         .show-menu {
           @apply opacity-100 left-0;
         }
+        .sticky {
+          @apply fixed !w-full top-0 z-50 bg-white shadow-xl left-0;
+        }
       }
     </style>
 
@@ -110,72 +113,81 @@
     <!-- Header Start -->
     <header id="header" class="bg-white">
       <!-- Navbar -->
-      <nav class="container flex justify-between items-center py-5 lg:py-8">
-        <!-- logo -->
-        <div id="logo">
-          <a
-            class="font-extrabold text-3xl md:text-3xl lg:text-4xl text-logo-color"
-            href="./index.html"
-            >M-Ticket</a
-          >
-        </div>
-        <!-- Menu -->
-        <ul
-          class="hidden lg:flex place-content-center gap-10 *:text-menu-item *:text-[18px] *:font-medium *:cursor-pointer *:capitalize"
+      <div id="nav" class="transition-all duration-200">
+        <nav
+          id="navbar"
+          class="container flex justify-between items-center py-5 lg:py-8 transition-all duration-200"
         >
-          <li
-            class="menu-item transition-colors duration-300 ease-linear hover:text-green"
+          <!-- logo -->
+          <div id="logo">
+            <a
+              class="font-extrabold text-3xl md:text-3xl lg:text-4xl text-logo-color"
+              href="./index.html"
+              >M-Ticket</a
+            >
+          </div>
+          <!-- Menu -->
+          <ul
+            class="hidden lg:flex place-content-center gap-10 *:text-menu-item *:text-[18px] *:font-medium *:cursor-pointer *:capitalize"
           >
-            Home
-          </li>
-          <li
-            class="menu-item transition-colors duration-300 ease-linear hover:text-green"
-          >
-            About
-          </li>
-          <li
-            class="menu-item transition-colors duration-300 ease-linear hover:text-green"
-          >
-            Destination
-          </li>
-          <li
-            class="menu-item transition-colors duration-300 ease-linear hover:text-green"
-          >
-            Search
-          </li>
-        </ul>
+            <li
+              class="menu-item transition-colors duration-300 ease-linear hover:text-green"
+            >
+              Home
+            </li>
+            <li
+              class="menu-item transition-colors duration-300 ease-linear hover:text-green"
+            >
+              About
+            </li>
+            <li
+              class="menu-item transition-colors duration-300 ease-linear hover:text-green"
+            >
+              Destination
+            </li>
+            <li
+              class="menu-item transition-colors duration-300 ease-linear hover:text-green"
+            >
+              Search
+            </li>
+          </ul>
 
-        <!-- Mobile, Tablet Menu -->
-        <ul
-          id="mobile-tablet-menu"
-          class="flex flex-col justify-start items-start gap-10 *:text-[18px] *:font-medium *:cursor-pointer *:capitalize fixed opacity-0 top-0 -left-full w-1/2 h-screen bg-green pl-[40px] pt-[80px] z-30 transition-all duration-300 ease-linear shadow-[0px_4px_16px_rgba(17,17,26,0.1),_0px_8px_24px_rgba(17,17,26,0.1),_0px_16px_56px_rgba(17,17,26,0.1)] *:transition-colors *:duration-300 *:ease-linear"
-        >
-          <li class="menu-item text-white hover:text-secondary-black">Home</li>
-          <li class="menu-item text-white hover:text-secondary-black">About</li>
-          <li class="menu-item text-white hover:text-secondary-black">
-            Destination
-          </li>
-          <li class="menu-item text-white hover:text-secondary-black">
-            Search
-          </li>
-        </ul>
-        <!-- Bus Button -->
-        <button
-          class="flex justify-center items-center mybtn border-green text-green bg-green/10 transition-colors duration-300 ease-linear hover:bg-transparent"
-        >
-          Bus<img
-            class="ml-2 border border-gray-300 border-dashed"
-            src="./images/bus-icon.png"
-            alt="bus"
-          />
-        </button>
-        <!-- Toggle Bar -->
-        <div id="menu-toggle">
-          <i
-            class="text-[25px] lg:hidden cursor-pointer font-extrabold transition-colors duration-300 ease-linear hover:text-green ri-menu-3-fill"
-          ></i>
-        </div>
-      </nav>
+          <!-- Mobile, Tablet Menu -->
+          <ul
+            id="mobile-tablet-menu"
+            class="flex flex-col justify-start items-start gap-10 *:text-[18px] *:font-medium *:cursor-pointer *:capitalize fixed opacity-0 top-0 -left-full w-1/2 h-screen bg-green pl-[40px] pt-[80px] z-30 transition-all duration-300 ease-linear shadow-[0px_4px_16px_rgba(17,17,26,0.1),_0px_8px_24px_rgba(17,17,26,0.1),_0px_16px_56px_rgba(17,17,26,0.1)] *:transition-colors *:duration-300 *:ease-linear"
+          >
+            <li class="menu-item text-white hover:text-secondary-black">
+              Home
+            </li>
+            <li class="menu-item text-white hover:text-secondary-black">
+              About
+            </li>
+            <li class="menu-item text-white hover:text-secondary-black">
+              Destination
+            </li>
+            <li class="menu-item text-white hover:text-secondary-black">
+              Search
+            </li>
+          </ul>
+          <!-- Bus Button -->
+          <button
+            class="flex justify-center items-center mybtn border-green text-green bg-green/10 transition-colors duration-300 ease-linear hover:bg-transparent"
+          >
+            Bus<img
+              class="ml-2 border border-gray-300 border-dashed"
+              src="./images/bus-icon.png"
+              alt="bus"
+            />
+          </button>
+          <!-- Toggle Bar -->
+          <div id="menu-toggle">
+            <i
+              class="text-[25px] lg:hidden cursor-pointer font-extrabold transition-colors duration-300 ease-linear hover:text-green ri-menu-3-fill"
+            ></i>
+          </div>
+        </nav>
+      </div>
 
       <!-- Hero -->
       <div id="hero" class="container">
