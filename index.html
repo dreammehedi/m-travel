@@ -411,7 +411,7 @@
                   src="./images/seat-green.png"
                   alt="seat-green"
                 />
-                <span id="available-seat"> 40 </span>
+                <span id="available-seat" class="mr-1"> 40 </span>
                 Seats left
               </button>
             </div>
@@ -475,7 +475,9 @@
               src="./images/fare.png"
               alt="taka"
             />
-            <h3 class="font-bold text-3xl text-secondary-black">550 Taka</h3>
+            <h3 class="font-bold text-3xl text-secondary-black">
+              <span id="per-seat-price">550</span> Taka
+            </h3>
             <strong class="font-semibold text-2xl text-[#03071299]"
               >Per Seat</strong
             >
@@ -536,253 +538,226 @@
             </button>
 
             <!-- Seat -->
-            <div id="seat" class="space-y-4">
-              <!-- A Seat List -->
+            <div class="flex">
+              <!--  Seat List -->
               <div
-                class="flex flex-wrap justify-between gap-2 items-center *:bg-[#F7F8F8] *:text-[#03071280] *:capitalize *:py-4 *:px-8 *:rounded-xl *:font-medium *:text-[18px] *:font-inter *:transition-colors *:duration-300 *:ease-linear"
+                class="grid grid-rows-10 gap-4 justify-center items-center mr-4 *:cursor-pointer *:text-[#03071280] *:capitalize *:font-medium *:text-[18px]"
               >
-                <strong class="!bg-transparent !p-0 !rounded-none">A</strong>
-                <button id="A1" class="hover:bg-[#1DD100] hover:text-white">
+                <strong id="A">A</strong>
+                <strong id="B">B</strong>
+                <strong id="C">C</strong>
+                <strong id="D">D</strong>
+                <strong id="E">E</strong>
+                <strong id="F">F</strong>
+                <strong id="G">G</strong>
+                <strong id="H">H</strong>
+                <strong id="I">I</strong>
+                <strong id="J">J</strong>
+              </div>
+
+              <!-- Seat List Items -->
+              <div
+                id="sets"
+                class="grid grid-cols-4 justify-between items-center gap-4 *:bg-[#F7F8F8] *:text-[#03071280] *:capitalize *:py-4 *:px-8 *:rounded-xl *:font-medium *:text-[18px] *:font-inter *:transition-colors *:duration-300 *:ease-linear"
+              >
+                <!-- A Set -->
+                <button
+                  data-set-id="A1"
+                  id="A1"
+                  class="set hover:bg-[#1DD100] hover:text-white"
+                >
                   A1
                 </button>
                 <button
+                  data-set-id="A2"
                   id="A2"
-                  class="hover:bg-[#1DD100] hover:text-white mr-4"
+                  class="set hover:bg-[#1DD100] hover:text-white mr-4"
                 >
                   A2
                 </button>
                 <button
+                  data-set-id="A3"
                   id="A3"
-                  class="hover:bg-[#1DD100] hover:text-white ml-4"
+                  class="set hover:bg-[#1DD100] hover:text-white ml-4"
                 >
                   A3
                 </button>
-                <button id="A4" class="hover:bg-[#1DD100] hover:text-white">
+                <button
+                  data-set-id="A4"
+                  id="A4"
+                  class="set hover:bg-[#1DD100] hover:text-white"
+                >
                   A4
                 </button>
-              </div>
-
-              <!-- B Seat List -->
-              <div
-                class="flex flex-wrap justify-between gap-2 items-center *:bg-[#F7F8F8] *:text-[#03071280] *:capitalize *:py-4 *:px-8 *:rounded-xl *:font-medium *:text-[18px] *:font-inter *:transition-colors *:duration-300 *:ease-linear"
-              >
-                <strong class="!bg-transparent !p-0 !rounded-none">B</strong>
-                <button id="B1" class="hover:bg-[#1DD100] hover:text-white">
+                <!-- B Set -->
+                <button id="B1" class="set hover:bg-[#1DD100] hover:text-white">
                   B1
                 </button>
                 <button
                   id="B2"
-                  class="hover:bg-[#1DD100] hover:text-white mr-4"
+                  class="set hover:bg-[#1DD100] hover:text-white mr-4"
                 >
                   B2
                 </button>
                 <button
                   id="B3"
-                  class="hover:bg-[#1DD100] hover:text-white ml-4"
+                  class="set hover:bg-[#1DD100] hover:text-white ml-4"
                 >
                   B3
                 </button>
-                <button id="B4" class="hover:bg-[#1DD100] hover:text-white">
+                <button id="B4" class="set hover:bg-[#1DD100] hover:text-white">
                   B4
                 </button>
-              </div>
-
-              <!-- C Seat List -->
-              <div
-                class="flex flex-wrap justify-between gap-2 items-center *:bg-[#F7F8F8] *:text-[#03071280] *:capitalize *:py-4 *:px-8 *:rounded-xl *:font-medium *:text-[18px] *:font-inter *:transition-colors *:duration-300 *:ease-linear"
-              >
-                <strong class="!bg-transparent !p-0 !rounded-none">C</strong>
-                <button id="C1" class="hover:bg-[#1DD100] hover:text-white">
+                <!-- C Set -->
+                <button id="C1" class="set hover:bg-[#1DD100] hover:text-white">
                   C1
                 </button>
                 <button
                   id="C2"
-                  class="hover:bg-[#1DD100] hover:text-white mr-4"
+                  class="set hover:bg-[#1DD100] hover:text-white mr-4"
                 >
                   C2
                 </button>
                 <button
                   id="C3"
-                  class="hover:bg-[#1DD100] hover:text-white ml-4"
+                  class="set hover:bg-[#1DD100] hover:text-white ml-4"
                 >
                   C3
                 </button>
-                <button id="C4" class="hover:bg-[#1DD100] hover:text-white">
+                <button id="C4" class="set hover:bg-[#1DD100] hover:text-white">
                   C4
                 </button>
-              </div>
-
-              <!-- D Seat List -->
-              <div
-                class="flex flex-wrap justify-between gap-2 items-center *:bg-[#F7F8F8] *:text-[#03071280] *:capitalize *:py-4 *:px-8 *:rounded-xl *:font-medium *:text-[18px] *:font-inter *:transition-colors *:duration-300 *:ease-linear"
-              >
-                <strong class="!bg-transparent !p-0 !rounded-none">D</strong>
-                <button id="D1" class="hover:bg-[#1DD100] hover:text-white">
+                <!-- D Set -->
+                <button id="D1" class="set hover:bg-[#1DD100] hover:text-white">
                   D1
                 </button>
                 <button
                   id="D2"
-                  class="hover:bg-[#1DD100] hover:text-white mr-4"
+                  class="set hover:bg-[#1DD100] hover:text-white mr-4"
                 >
                   D2
                 </button>
                 <button
                   id="D3"
-                  class="hover:bg-[#1DD100] hover:text-white ml-4"
+                  class="set hover:bg-[#1DD100] hover:text-white ml-4"
                 >
                   D3
                 </button>
-                <button id="D4" class="hover:bg-[#1DD100] hover:text-white">
+                <button id="D4" class="set hover:bg-[#1DD100] hover:text-white">
                   D4
                 </button>
-              </div>
-
-              <!-- E Seat List -->
-              <div
-                class="flex flex-wrap justify-between gap-2 items-center *:bg-[#F7F8F8] *:text-[#03071280] *:capitalize *:py-4 *:px-8 *:rounded-xl *:font-medium *:text-[18px] *:font-inter *:transition-colors *:duration-300 *:ease-linear"
-              >
-                <strong class="!bg-transparent !p-0 !rounded-none">E</strong>
-                <button id="E1" class="hover:bg-[#1DD100] hover:text-white">
+                <!-- E Set -->
+                <button id="E1" class="set hover:bg-[#1DD100] hover:text-white">
                   E1
                 </button>
                 <button
                   id="E2"
-                  class="hover:bg-[#1DD100] hover:text-white mr-4"
+                  class="set hover:bg-[#1DD100] hover:text-white mr-4"
                 >
                   E2
                 </button>
                 <button
                   id="E3"
-                  class="hover:bg-[#1DD100] hover:text-white ml-4"
+                  class="set hover:bg-[#1DD100] hover:text-white ml-4"
                 >
                   E3
                 </button>
-                <button id="E4" class="hover:bg-[#1DD100] hover:text-white">
+                <button id="E4" class="set hover:bg-[#1DD100] hover:text-white">
                   E4
                 </button>
-              </div>
-
-              <!-- F Seat List -->
-              <div
-                class="flex flex-wrap justify-between gap-2 items-center *:bg-[#F7F8F8] *:text-[#03071280] *:capitalize *:py-4 *:px-8 *:rounded-xl *:font-medium *:text-[18px] *:font-inter *:transition-colors *:duration-300 *:ease-linear"
-              >
-                <strong class="!bg-transparent !p-0 !rounded-none">F</strong>
-                <button id="F1" class="hover:bg-[#1DD100] hover:text-white">
+                <!-- F Set -->
+                <button id="F1" class="set hover:bg-[#1DD100] hover:text-white">
                   F1
                 </button>
                 <button
                   id="F2"
-                  class="hover:bg-[#1DD100] hover:text-white mr-4"
+                  class="set hover:bg-[#1DD100] hover:text-white mr-4"
                 >
                   F2
                 </button>
                 <button
                   id="F3"
-                  class="hover:bg-[#1DD100] hover:text-white ml-4"
+                  class="set hover:bg-[#1DD100] hover:text-white ml-4"
                 >
                   F3
                 </button>
-                <button id="F4" class="hover:bg-[#1DD100] hover:text-white">
+                <button id="F4" class="set hover:bg-[#1DD100] hover:text-white">
                   F4
                 </button>
-              </div>
-
-              <!-- G Seat List -->
-              <div
-                class="flex flex-wrap justify-between gap-2 items-center *:bg-[#F7F8F8] *:text-[#03071280] *:capitalize *:py-4 *:px-8 *:rounded-xl *:font-medium *:text-[18px] *:font-inter *:transition-colors *:duration-300 *:ease-linear"
-              >
-                <strong class="!bg-transparent !p-0 !rounded-none">G</strong>
-                <button id="G1" class="hover:bg-[#1DD100] hover:text-white">
+                <!-- G Set -->
+                <button id="G1" class="set hover:bg-[#1DD100] hover:text-white">
                   G1
                 </button>
                 <button
                   id="G2"
-                  class="hover:bg-[#1DD100] hover:text-white mr-4"
+                  class="set hover:bg-[#1DD100] hover:text-white mr-4"
                 >
                   G2
                 </button>
                 <button
                   id="G3"
-                  class="hover:bg-[#1DD100] hover:text-white ml-4"
+                  class="set hover:bg-[#1DD100] hover:text-white ml-4"
                 >
                   G3
                 </button>
-                <button id="G4" class="hover:bg-[#1DD100] hover:text-white">
+                <button id="G4" class="set hover:bg-[#1DD100] hover:text-white">
                   G4
                 </button>
-              </div>
-
-              <!-- H Seat List -->
-              <div
-                class="flex flex-wrap justify-between gap-2 items-center *:bg-[#F7F8F8] *:text-[#03071280] *:capitalize *:py-4 *:px-8 *:rounded-xl *:font-medium *:text-[18px] *:font-inter *:transition-colors *:duration-300 *:ease-linear"
-              >
-                <strong class="!bg-transparent !p-0 !rounded-none">H</strong>
-                <button id="H1" class="hover:bg-[#1DD100] hover:text-white">
+                <!-- H Set -->
+                <button id="H1" class="set hover:bg-[#1DD100] hover:text-white">
                   H1
                 </button>
                 <button
                   id="H2"
-                  class="hover:bg-[#1DD100] hover:text-white mr-4"
+                  class="set hover:bg-[#1DD100] hover:text-white mr-4"
                 >
                   H2
                 </button>
                 <button
                   id="H3"
-                  class="hover:bg-[#1DD100] hover:text-white ml-4"
+                  class="set hover:bg-[#1DD100] hover:text-white ml-4"
                 >
                   H3
                 </button>
-                <button id="H4" class="hover:bg-[#1DD100] hover:text-white">
+                <button id="H4" class="set hover:bg-[#1DD100] hover:text-white">
                   H4
                 </button>
-              </div>
-
-              <!-- I Seat List -->
-              <div
-                class="flex flex-wrap justify-between gap-2 items-center *:bg-[#F7F8F8] *:text-[#03071280] *:capitalize *:py-4 *:px-8 *:rounded-xl *:font-medium *:text-[18px] *:font-inter *:transition-colors *:duration-300 *:ease-linear"
-              >
-                <strong class="!bg-transparent !p-0 !rounded-none">I</strong>
-                <button id="I1" class="hover:bg-[#1DD100] hover:text-white">
+                <!-- I Set -->
+                <button id="I1" class="set hover:bg-[#1DD100] hover:text-white">
                   I1
                 </button>
                 <button
                   id="I2"
-                  class="hover:bg-[#1DD100] hover:text-white mr-4"
+                  class="set hover:bg-[#1DD100] hover:text-white mr-4"
                 >
                   I2
                 </button>
                 <button
                   id="I3"
-                  class="hover:bg-[#1DD100] hover:text-white ml-4"
+                  class="set hover:bg-[#1DD100] hover:text-white ml-4"
                 >
                   I3
                 </button>
-                <button id="I4" class="hover:bg-[#1DD100] hover:text-white">
+                <button id="I4" class="set hover:bg-[#1DD100] hover:text-white">
                   I4
                 </button>
-              </div>
-
-              <!-- J Seat List -->
-              <div
-                class="flex flex-wrap justify-between gap-2 items-center *:bg-[#F7F8F8] *:text-[#03071280] *:capitalize *:py-4 *:px-8 *:rounded-xl *:font-medium *:text-[18px] *:font-inter *:transition-colors *:duration-300 *:ease-linear"
-              >
-                <strong class="!bg-transparent !p-0 !rounded-none">J</strong>
-                <button id="J1" class="hover:bg-[#1DD100] hover:text-white">
+                <!-- J Set -->
+                <button id="J1" class="set hover:bg-[#1DD100] hover:text-white">
                   J1
                 </button>
                 <button
                   id="J2"
-                  class="hover:bg-[#1DD100] hover:text-white mr-4"
+                  class="set hover:bg-[#1DD100] hover:text-white mr-4"
                 >
                   J2
                 </button>
                 <button
                   id="J3"
-                  class="hover:bg-[#1DD100] hover:text-white ml-4"
+                  class="set hover:bg-[#1DD100] hover:text-white ml-4"
                 >
                   J3
                 </button>
-                <button id="J4" class="hover:bg-[#1DD100] hover:text-white">
+                <button id="J4" class="set hover:bg-[#1DD100] hover:text-white">
                   J4
                 </button>
               </div>
@@ -804,26 +779,20 @@
                 <thead class="border-b-2 border-gray-300 border-dashed">
                   <tr class="*:font-medium *:text-base *:pb-4 *:text-[#030712]">
                     <th>
-                      Seat<span id="selected-seat" class="font-bold text-sm"
-                        >2</span
+                      Seat<span
+                        id="selected-seat"
+                        class="font-bold text-sm bg-green text-white p-1 rounded-full ml-1"
+                        >0</span
                       >
                     </th>
                     <th>Class</th>
                     <th class="text-end">Price</th>
                   </tr>
                 </thead>
-                <tbody class="text-left border-b border-gray-300">
-                  <tr class="*:text-[#03071299] *:text-base *:font-normal">
-                    <td class="py-2">C2</td>
-                    <td class="py-2">Economoy</td>
-                    <td class="py-2 text-end">550</td>
-                  </tr>
-                  <tr class="*:text-[#03071299] *:text-base *:font-normal">
-                    <td class="py-2">C2</td>
-                    <td class="py-2">Economoy</td>
-                    <td class="py-2 text-end">550</td>
-                  </tr>
-                </tbody>
+                <tbody
+                  id="selected-seat-body"
+                  class="text-left border-b border-gray-300"
+                ></tbody>
               </table>
 
               <!-- Total Calculate Price -->
@@ -842,6 +811,7 @@
                   placeholder="Have any copupon?"
                 />
                 <button
+                  disabled
                   type="submit"
                   class="absolute top-1/2 right-2 z-10 -translate-y-1/2 !py-[10px] !px-4 mybtn bg-green text-white hover:bg-green/10 transition-colors duration-300 ease-linear hover:text-secondary-black hover:border-green"
                 >
@@ -1022,5 +992,7 @@
   ></script>
 
   <!-- Main Javascript File -->
+  <script src="./js/navbar.js"></script>
+  <script src="./js/utility.js"></script>
   <script src="./js/main.js"></script>
 </html>
