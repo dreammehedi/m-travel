@@ -413,7 +413,7 @@
             <div class="p-8 mt-5 bg-[#F7F8F8] rounded-3xl flex flex-col gap-4">
               <!-- Route -->
               <div
-                class="flex justify-between items-center py-4 border-b border-gray-300 border-dashed"
+                class="flex justify-between items-center py-4 border-b-2 border-gray-300 border-dashed"
               >
                 <p class="font-semibold text-[18px] text-[#03071299]">Route</p>
                 <p class="font-semibold text-[18px] text-secondary-black">
@@ -423,7 +423,7 @@
 
               <!-- Departure Time -->
               <div
-                class="flex justify-between items-center py-4 border-b border-gray-300 border-dashed"
+                class="flex justify-between items-center py-4 border-b-2 border-gray-300 border-dashed"
               >
                 <p class="font-semibold text-[18px] text-[#03071299]">
                   Departure Time
@@ -474,6 +474,63 @@
               >Per Seat</strong
             >
           </div>
+        </div>
+
+        <!-- Mehedi Paribahan Seat Booking -->
+        <div
+          class="mt-6 bg-white rounded-3xl p-8 grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-6"
+        >
+          <!-- Select Your Seat -->
+          <div
+            class="p-8 border-b-2 lg:border-b-0 lg:border-r-2 border-gray-300 border-dashed"
+          >
+            <!-- Title -->
+            <h2
+              class="font-semibold text-secondary-black text-xl md:text-2xl mb-5"
+            >
+              Select Your Seat
+            </h2>
+
+            <!-- Available Or Selected -->
+            <div
+              class="flex justify-between items-center gap-4 border-t-2 border-b-2 border-gray-300 border-dashed py-5"
+            >
+              <!-- Available -->
+              <button
+                class="flex font-medium text-[18px] text-[#03071280] justify-start items-center font-inter"
+              >
+                <img
+                  class="mr-2 border border-gray-300 border-dashed"
+                  src="./images/seat-gray.png"
+                  alt="seat-gray"
+                />
+                Available
+              </button>
+
+              <!-- Selected -->
+              <button
+                class="flex font-medium text-[18px] text-[#03071280] justify-start items-center font-inter"
+              >
+                <img
+                  class="mr-2 border border-gray-300 border-dashed"
+                  src="./images/seat-green-filled.png"
+                  alt="seat-green-filled"
+                />
+                Selected
+              </button>
+            </div>
+
+            <!-- Gear Button -->
+            <button class="mybtn bg-[#0307121A] !px-10 !my-6 flex !ml-auto">
+              <img
+                class="w-full h-full object-cover"
+                src="./images/gear.png"
+                alt="gear"
+              />
+            </button>
+          </div>
+          <!-- Select Your Seat Detailes -->
+          <div class="p-8">dfa</div>
         </div>
       </div>
     </section>
