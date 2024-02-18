@@ -482,18 +482,18 @@
         >
           <!-- Select Your Seat -->
           <div
-            class="p-8 border-b-2 lg:border-b-0 lg:border-r-2 border-gray-300 border-dashed"
+            class="p-8 border-r-0 lg:border-r-2 border-gray-300 border-dashed"
           >
             <!-- Title -->
             <h2
-              class="font-semibold text-secondary-black text-xl md:text-2xl mb-5 border-b-2 border-gray-300 border-dashed pb-5"
+              class="font-semibold text-secondary-black text-xl md:text-2xl mb-5"
             >
               Select Your Seat
             </h2>
 
             <!-- Available Or Selected -->
             <div
-              class="flex justify-between items-center gap-4 border-b-2 border-gray-300 border-dashed pb-5"
+              class="flex justify-between items-center gap-4 border-t-2 border-b-2 border-gray-300 border-dashed py-5"
             >
               <!-- Available -->
               <button
@@ -819,6 +819,7 @@
                   </tr>
                 </tbody>
               </table>
+
               <!-- Total Calculate Price -->
               <div
                 class="flex justify-between items-center my-4 font-inter *:font-medium *:text-base *:text-[#030712]"
@@ -830,7 +831,7 @@
               <!-- Have A Coupon -->
               <div class="font-inter relative">
                 <input
-                  class="w-full py-4 placeholder:font-inter placeholder:text-sm bg-white rounded-xl p-5 border-none outline-1 outline-green"
+                  class="w-full py-4 placeholder:font-inter placeholder:text-sm placeholder:text-[#03071266] bg-white rounded-xl p-5 border-none outline-1 outline-green"
                   type="text"
                   placeholder="Have any copupon?"
                 />
@@ -850,6 +851,75 @@
                 <h4>BDT <span id="grand-total-price">1100</span></h4>
               </div>
             </div>
+
+            <!-- Users Form -->
+            <form id="user-form" class="font-inter my-5 flex flex-col gap-4">
+              <!-- Name Field -->
+              <label
+                for="name"
+                class="flex flex-col gap-4 font-semibold text-base text-secondary-black"
+                >Passenger Name*
+                <input
+                  class="w-full border border-gray-300 outline-1 outline-green py-5 px-6 rounded-xl placeholder:font-inter placeholder:font-normal placeholder:text-[#03071266]"
+                  type="text"
+                  name="name"
+                  id="name"
+                  placeholder="Enter your name"
+                  required
+                />
+              </label>
+
+              <!-- Number Field -->
+              <label
+                for="number"
+                class="flex flex-col gap-4 font-semibold text-base text-secondary-black"
+                >Phone Number*
+                <input
+                  class="w-full border border-gray-300 outline-1 outline-green py-5 px-6 rounded-xl placeholder:font-inter placeholder:font-normal placeholder:text-[#03071266]"
+                  type="number"
+                  name="number"
+                  id="number"
+                  placeholder="Enter your phone number"
+                  required
+                />
+              </label>
+
+              <!-- Email Field -->
+              <label
+                for="email"
+                class="flex flex-col gap-4 font-semibold text-base text-secondary-black"
+                >Email ID*
+                <input
+                  class="w-full border border-gray-300 outline-1 outline-green py-5 px-6 rounded-xl placeholder:font-inter placeholder:font-normal placeholder:text-[#03071266]"
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="Enter your email id"
+                  required
+                />
+              </label>
+
+              <!-- Submit Button -->
+              <button
+                class="mybtn bg-green text-white transition-colors duration-300 ease-linear hover:border-green hover:bg-green/10 hover:text-secondary-black"
+                type="submit"
+              >
+                Next
+              </button>
+
+              <!-- Terms and Conditions & Cancellation Policy -->
+              <div class="flex justify-center items-center gap-8 font-inter">
+                <button
+                  class="text-[#03071299] pb-[2px] border-b border-gray-300"
+                >
+                  Terms and Conditions</button
+                ><button
+                  class="text-[#03071299] pb-[2px] border-b border-gray-300"
+                >
+                  Cancellation Policy
+                </button>
+              </div>
+            </form>
           </div>
         </div>
       </div>
