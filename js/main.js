@@ -12,6 +12,9 @@ for (const set of sets) {
     // Select Current Set
     const currentElement = e.target;
 
+    // Validate Set Are Selected
+    currentElement.disabled = true;
+
     // Current Set Selected
     currentElement.classList.add("!bg-green", "!text-white");
 
