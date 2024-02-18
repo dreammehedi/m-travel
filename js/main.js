@@ -13,7 +13,7 @@ for (const set of sets) {
     const currentElement = e.target;
 
     // Current Set Selected
-    AddClass(currentElement);
+    currentElement.classList.add("!bg-green", "!text-white");
 
     // Available Sets
     let availableSets = Number(
@@ -69,5 +69,7 @@ for (const set of sets) {
     // Find Total Price
     const totalPrice = Number(document.getElementById("total-price").innerText);
     document.getElementById("total-price").innerText = totalPrice + perSetPrice;
+
+    getDiscount();
   });
 }

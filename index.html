@@ -322,7 +322,7 @@
           <!-- Content -->
           <div class="font-inter flex flex-col space-y-2 text-[#030712CC]">
             <h2 class="text-xl md:text-4xl lg:text-[40px] font-black">
-              <span id="off15">20</span>% OFF
+              <span id="off20">20</span>% OFF
             </h2>
             <h3 class="text-base md:text-xl font-semibold">
               on your next purchase
@@ -804,7 +804,7 @@
               </div>
 
               <!-- Have A Coupon -->
-              <div class="font-inter relative">
+              <div id="coupon-input-field-&-btn" class="font-inter relative">
                 <input
                   id="coupon-field"
                   class="w-full py-4 placeholder:font-inter placeholder:text-sm placeholder:text-[#03071266] bg-white rounded-xl p-5 border-none outline-1 outline-green"
@@ -823,7 +823,8 @@
 
               <!-- Total Discount Calculate Price -->
               <div
-                class="flex justify-between items-center my-4 font-inter *:font-medium *:text-base *:text-[#030712]"
+                id="grand-total"
+                class="hidden justify-between items-center my-4 font-inter *:font-medium *:text-base *:text-[#030712]"
               >
                 <h4>Grand Total</h4>
                 <h4>BDT <span id="grand-total-price">0</span></h4>
