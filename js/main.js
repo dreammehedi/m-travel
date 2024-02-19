@@ -26,9 +26,9 @@ for (const set of sets) {
     // Check How Much Set Are Selected
     selectedSetCount += 1;
 
-    if (selectedSetCount === 4) {
+    if (selectedSetCount >= 4) {
       alert(
-        `You Are Already 4 Set Selected! Only One Person Can Buy Maximam 4 Set.`
+        `You Are Already 4 Set Selected! Only One Person Can Buy Maximum 4 Set.`
       );
       const sets = document.querySelectorAll(".set");
       for (const set of sets) {
@@ -109,6 +109,13 @@ for (const set of sets) {
     // **************************************************
     // Check Minimum One Sit Are Selected And Phone Num Is Valie
     checkSitNumber(selectedSetCount);
+
+    // Minimum 4 Seat Selected Coupon Input Field Enable
+    const couponField = document.getElementById("coupon-field");
+    if (selectedSetCount === 4) {
+      couponField.disabled = false;
+      couponField.classList.add("border");
+    }
   });
 }
 
