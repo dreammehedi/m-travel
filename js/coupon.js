@@ -29,9 +29,6 @@ applyBtn.addEventListener("click", getFinalDiscount);
 function getFinalDiscount() {
   //   Get Discount
   getDiscount();
-
-  //   Hide Coupon Input Field & Apply Button
-  hideCouponInputField();
 }
 
 // Get Discount
@@ -45,8 +42,14 @@ function getDiscount() {
 
   //   Discount Calculation
   if (couponValueCheck === "NEW15") {
+    // Hide Coupon Input Field & Apply Button
+    hideCouponInputField();
+
     const totalPrice = Number(document.getElementById("total-price").innerText);
     const discountPrice = (off15 / 100) * totalPrice;
+
+    // Set Discount Price
+    setDiscountPrice("discount-price", discountPrice);
 
     // Discount Total Grand Price
     const discountTotalGrandPrice = totalPrice - discountPrice;
@@ -55,8 +58,14 @@ function getDiscount() {
     const grandTotalPrice = document.getElementById("grand-total-price");
     grandTotalPrice.innerText = discountTotalGrandPrice;
   } else if (couponValueCheck === "Couple 20") {
+    // Hide Coupon Input Field & Apply Button
+    hideCouponInputField();
+
     const totalPrice = Number(document.getElementById("total-price").innerText);
     const discountPrice = (off20 / 100) * totalPrice;
+
+    // Set Discount Price
+    setDiscountPrice("discount-price", discountPrice);
 
     // Discount Total Grand Price
     const discountTotalGrandPrice = totalPrice - discountPrice;
