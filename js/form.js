@@ -21,3 +21,9 @@ closeModal.addEventListener("click", () => {
   const modal = document.getElementById("modal");
   modal.classList.remove("!flex");
 });
+
+// After Form Submit Page Refresh Stop
+const form = document.getElementById("user-form");
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
+});
