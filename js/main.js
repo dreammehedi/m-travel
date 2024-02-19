@@ -114,7 +114,7 @@ for (const set of sets) {
     const couponField = document.getElementById("coupon-field");
     if (selectedSetCount === 4) {
       couponField.disabled = false;
-      couponField.classList.add("border");
+      couponField.classList.add("border-2");
     }
   });
 }
