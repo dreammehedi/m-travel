@@ -1,19 +1,12 @@
-// Check Minimum One Sit Selected Or Phone Number Is Valid
-const numberField = document.getElementById("number");
-numberField.addEventListener("keyup", function (e) {
-  // Current Number Length
-  const checkNumberNotEmpty = e.target.value.length;
-
-  // Find Selected Sit Value
-  const selectedSit = Number(
-    document.getElementById("selected-seat").innerText
-  );
-  // selected sit not valid akhan theka kaj korte hoba abar
-  if (checkNumberNotEmpty !== 0 && selectedSit !== 0) {
-    const couponInputField = document.getElementById("coupon-field");
-    couponInputField.disabled = false;
+// Check Minimum One Sit Are Selected And Phone Number Is Valid
+function checkSitNumber(selectedSit) {
+  const number = parseInt(document.getElementById("number").value);
+  if (selectedSit >= 1 && !isNaN(number)) {
+    const submitForm = document.getElementById("submit-form");
+    submitForm.disabled = false;
+    submitForm.classList.add("!bg-green", "text-white");
   }
-});
+}
 
 // Find Submit Btn
 const submitBtn = document.getElementById("submit-form");

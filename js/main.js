@@ -25,6 +25,7 @@ for (const set of sets) {
 
     // Check How Much Set Are Selected
     selectedSetCount += 1;
+
     if (selectedSetCount === 4) {
       alert(
         `You Are Already 4 Set Selected! Only One Person Can Buy Maximam 4 Set.`
@@ -104,6 +105,17 @@ for (const set of sets) {
     // Set Grand Total
     document.getElementById("grand-total-price").innerText =
       totalPrice + perSetPrice;
+
     // **************************************************
+    // Check Minimum One Sit Are Selected And Phone Num Is Valie
+    checkSitNumber(selectedSetCount);
   });
 }
+
+// Number Field Some Function Apply
+const numberField = document.getElementById("number");
+numberField.addEventListener("keyup", (e) => {
+  const currentNumber = parseInt(e.target.value);
+  if (!isNaN(currentNumber) && typeof currentNumber === "number")
+    checkSitNumber(selectedSetCount);
+});

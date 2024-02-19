@@ -794,7 +794,7 @@
               </div>
 
               <!-- Have A Coupon -->
-              <div id="coupon-input-field-&-btn" class="font-inter relative">
+              <div class="font-inter relative">
                 <input
                   disabled
                   id="coupon-field"
@@ -806,7 +806,7 @@
                   id="apply-coupon"
                   disabled
                   type="submit"
-                  class="absolute top-1/2 right-2 z-10 -translate-y-1/2 !py-[10px] !px-4 mybtn bg-gray-300 text-white hover:bg-green/10 transition-colors duration-300 ease-linear hover:text-secondary-black hover:border-green"
+                  class="absolute top-1/2 right-2 z-10 -translate-y-1/2 !py-[10px] !px-4 mybtn bg-green/10 text-secondary-black hover:bg-green/10 transition-colors duration-300 ease-linear"
                 >
                   Apply
                 </button>
@@ -817,7 +817,7 @@
                 class="flex justify-between items-center my-4 font-inter *:font-medium *:text-base *:text-[#030712]"
               >
                 <h4>Discount Price</h4>
-                <h4>BDT <span id="total-price">0</span></h4>
+                <h4>BDT <span id="discount-price">0</span></h4>
               </div>
 
               <!-- Total Discount Calculate Price -->
@@ -881,7 +881,7 @@
               <button
                 disabled
                 id="submit-form"
-                class="mybtn bg-green text-white transition-colors duration-300 ease-linear hover:border-green hover:bg-green/10 hover:text-secondary-black"
+                class="mybtn bg-green/10 text-secondary-black transition-colors duration-300 ease-linear"
                 type="submit"
               >
                 Next
@@ -1002,6 +1002,6 @@
   <script src="./js/navbar.js"></script>
   <script src="./js/utility.js"></script>
   <script src="./js/main.js"></script>
-  <!-- <script src="./js/coupon.js"></script> -->
-  <!-- <script src="./js/form.js"></script> -->
+  <script src="./js/form.js"></script>
+  <script src="./js/coupon.js"></script>
 </html>
