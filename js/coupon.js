@@ -10,14 +10,14 @@ couponField.addEventListener("keyup", (e) => {
   //   20% Coupon Code
   const coupon20 = document.getElementById("coupon20").innerText;
 
-  // Check   Coupon Input Value Is True
+  // Check Coupon Input Value Is True
   if (couponInputValue === coupon15 || couponInputValue === coupon20) {
     const applyBtn = document.getElementById("apply-coupon");
     applyBtn.disabled = false;
-    applyBtn.classList.add("bg-green");
+    applyBtn.classList.add("!bg-green", "text-white");
   } else {
     applyBtn.disabled = true;
-    applyBtn.classList.remove("bg-green");
+    applyBtn.classList.remove("!bg-green", "text-white");
   }
 });
 
