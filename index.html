@@ -155,18 +155,18 @@
           <!-- Mobile, Tablet Menu -->
           <ul
             id="mobile-tablet-menu"
-            class="flex flex-col justify-start items-start gap-10 *:text-[18px] *:font-medium *:cursor-pointer *:capitalize fixed opacity-0 top-0 -left-full w-1/2 h-screen bg-green pl-[40px] pt-[80px] z-30 transition-all duration-300 ease-linear shadow-[0px_4px_16px_rgba(17,17,26,0.1),_0px_8px_24px_rgba(17,17,26,0.1),_0px_16px_56px_rgba(17,17,26,0.1)] *:transition-colors *:duration-300 *:ease-linear"
+            class="flex flex-col justify-start items-start gap-10 *:text-[18px] *:font-medium bg-[#F7F8F8] shadow-lg shadow-green *:cursor-pointer *:capitalize fixed opacity-0 top-0 -left-full w-1/2 h-screen pl-[40px] pt-[80px] z-30 transition-all duration-300 ease-linear *:transition-colors *:duration-300 *:ease-linear"
           >
-            <li class="menu-item text-white hover:text-secondary-black">
+            <li class="menu-item text-secondary-black hover:text-green">
               Home
             </li>
-            <li class="menu-item text-white hover:text-secondary-black">
+            <li class="menu-item text-secondary-black hover:text-green">
               About
             </li>
-            <li class="menu-item text-white hover:text-secondary-black">
+            <li class="menu-item text-secondary-black hover:text-green">
               Destination
             </li>
-            <li class="menu-item text-white hover:text-secondary-black">
+            <li class="menu-item text-secondary-black hover:text-green">
               Search
             </li>
           </ul>
@@ -796,6 +796,7 @@
               <!-- Have A Coupon -->
               <div id="coupon-input-field-&-btn" class="font-inter relative">
                 <input
+                  disabled
                   id="coupon-field"
                   class="w-full py-4 placeholder:font-inter placeholder:text-sm placeholder:text-[#03071266] bg-white rounded-xl p-5 border-none outline-1 outline-green"
                   type="text"
@@ -814,7 +815,7 @@
               <!-- Total Discount Calculate Price -->
               <div
                 id="grand-total"
-                class="hidden justify-between items-center my-4 font-inter *:font-medium *:text-base *:text-[#030712]"
+                class="flex justify-between items-center my-4 font-inter *:font-medium *:text-base *:text-[#030712]"
               >
                 <h4>Grand Total</h4>
                 <h4>BDT <span id="grand-total-price">0</span></h4>
@@ -870,6 +871,7 @@
 
               <!-- Submit Button -->
               <button
+                disabled
                 id="submit-form"
                 class="mybtn bg-green text-white transition-colors duration-300 ease-linear hover:border-green hover:bg-green/10 hover:text-secondary-black"
                 type="submit"
@@ -990,8 +992,8 @@
 
   <!-- Main Javascript File -->
   <script src="./js/navbar.js"></script>
-  <script src="./js/utility.js"></script>
+  <!-- <script src="./js/utility.js"></script>
   <script src="./js/coupon.js"></script>
   <script src="./js/form.js"></script>
-  <script src="./js/main.js"></script>
+  <script src="./js/main.js"></script> -->
 </html>

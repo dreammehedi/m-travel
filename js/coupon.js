@@ -27,9 +27,6 @@ applyBtn.addEventListener("click", getFinalDiscount);
 
 // Calculate Final Discount
 function getFinalDiscount() {
-  //   Grand Total Show Hide
-  showGrandTotal("grand-total");
-
   //   Get Discount
   getDiscount();
 

@@ -16,12 +16,16 @@ for (const set of sets) {
     // Select Current Set
     const currentElement = e.target;
 
+    // **************************************************
+
     // Validate Set Are Selected
     currentElement.disabled = true;
 
+    // **************************************************
+
     // Check How Much Set Are Selected
     selectedSetCount += 1;
-    if (selectedSetCount >= 4) {
+    if (selectedSetCount === 4) {
       alert(
         `You Are Already 4 Set Selected! Only One Person Can Buy Maximam 4 Set.`
       );
@@ -30,6 +34,9 @@ for (const set of sets) {
         set.disabled = true;
       }
     }
+
+    // *************************************************
+
     // Current Set Selected
     currentElement.classList.add("!bg-green", "!text-white");
 
@@ -37,11 +44,14 @@ for (const set of sets) {
     let availableSets = Number(
       document.getElementById("available-seat").innerText
     );
+
     // Calculate Available Sets
     let availableSetsDown = availableSets - 1;
 
     // Fine Available Sets And Set The Value
     setDownUp("available-seat", availableSetsDown);
+
+    // **************************************************
 
     // Selected Set
     const selectedSit = Number(
@@ -52,6 +62,7 @@ for (const set of sets) {
 
     // Fine Selected Set And Set The Value
     setDownUp("selected-seat", selectedSitUp);
+    // **************************************************
 
     // Current Value
     const currentValue = e.target.innerText;
@@ -75,7 +86,7 @@ for (const set of sets) {
 
     // Assign Value Table Data
     td1.innerText = currentValue;
-    td2.innerText = "Economoy";
+    td2.innerText = "Economy";
     td3.innerText = perSetPrice;
 
     // Assign Table Data In Parent Element
@@ -83,11 +94,16 @@ for (const set of sets) {
     tr.appendChild(td2);
     tr.appendChild(td3);
     findSelectedSeatRow.appendChild(tr);
+    // **************************************************
 
     // Find Total Price
     const totalPrice = Number(document.getElementById("total-price").innerText);
     document.getElementById("total-price").innerText = totalPrice + perSetPrice;
+    // **************************************************
 
-    getDiscount();
+    // Set Grand Total
+    document.getElementById("grand-total-price").innerText =
+      totalPrice + perSetPrice;
+    // **************************************************
   });
 }
