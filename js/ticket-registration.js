@@ -1,7 +1,7 @@
 const ticketRegistration = [
   { img: "./images/people.png", count: "500K+", type: "Registered users" },
   { img: "./images/ticket-cupon.png", count: "1.7lacks", type: "Ticket Sold" },
-  { img: "../images/stoppage.png", count: "80 k+", type: "Rental partners" },
+  { img: "./images/stoppage.png", count: "80 k+", type: "Rental partners" },
 ];
 
 const ticketRegistrationUser = document.getElementById(

@@ -8,7 +8,7 @@ const bestOffers = [
     },
     title: "on your next purchase",
     date: "use by January 2024",
-    img: "../images/cupon-devider.png",
+    img: "./images/cupon-devider.png",
     coupon: {
       id: "coupon15",
       code: "NEW15",
@@ -24,7 +24,7 @@ const bestOffers = [
     },
     title: "on your next purchase",
     date: "use by January 2024",
-    img: "../images/cupon-devider.png",
+    img: "./images/cupon-devider.png",
     coupon: {
       id: "coupon20",
       code: "Couple 20",
