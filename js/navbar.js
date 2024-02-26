@@ -2,22 +2,28 @@
 const menu = ["Home", "About", "Blog", "Destination", "Search"];
 const desktopMenu = document.getElementById("desktop-menu");
 
+// dynamic mobile tablet menu
+const mobileTabletMenu = document.getElementById("mobile-tablet-menu");
+
 menu.forEach((val) => {
-  const li = document.createElement("li");
-  li.innerText = val;
-  li.classList.add("menu-item", "hover:text-green");
-  desktopMenu.classList.add(
-    "*:transition-colors",
-    "*:duration-300",
-    "*:ease-linear"
-  );
-  desktopMenu.appendChild(li);
+  // desktop menu
+  const desktopLi = document.createElement("li");
+  desktopLi.innerText = val;
+  desktopLi.classList.add("menu-item", "hover:text-green");
+
+  desktopMenu.appendChild(desktopLi);
+  // dynamic mobile tablet menu
+  const desktopMobileLi = document.createElement("li");
+  desktopMobileLi.innerText = val;
+  desktopMobileLi.classList.add("menu-item", "hover:text-green", "hover:pl-1");
+
+  mobileTabletMenu.appendChild(desktopMobileLi);
 });
 
 // Mobile, Tablet Menu Responsive
 const menuToggle = document.getElementById("menu-toggle");
 menuToggle.addEventListener("click", () => {
-  const mobileTabletMenu = document.getElementById("mobile-tablet-menu");
+  // const mobileTabletMenu = document.getElementById("mobile-tablet-menu");
   mobileTabletMenu.classList.toggle("show-menu");
   menuToggle.classList.toggle("text-green");
 });
