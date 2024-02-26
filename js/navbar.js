@@ -1,3 +1,19 @@
+// dynamic menu
+const menu = ["Home", "About", "Blog", "Destination", "Search"];
+const desktopMenu = document.getElementById("desktop-menu");
+
+menu.forEach((val) => {
+  const li = document.createElement("li");
+  li.innerText = val;
+  li.classList.add("menu-item", "hover:text-green");
+  desktopMenu.classList.add(
+    "*:transition-colors",
+    "*:duration-300",
+    "*:ease-linear"
+  );
+  desktopMenu.appendChild(li);
+});
+
 // Mobile, Tablet Menu Responsive
 const menuToggle = document.getElementById("menu-toggle");
 menuToggle.addEventListener("click", () => {
