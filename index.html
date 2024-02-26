@@ -277,7 +277,10 @@
       <!-- Best Offers Title -->
       <h1 class="s-title mb-12">Best offers for you</h1>
       <!-- Discount Coupon -->
-      <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 md:gap-8">
+      <div
+        id="coupon-code"
+        class="grid grid-cols-1 lg:grid-cols-2 gap-4 md:gap-8"
+      >
         <!-- 15% OFF -->
         <div
           class="bg-[#FFBF0F] rounded-3xl px-12 flex justify-between items-center"
@@ -437,23 +440,9 @@
 
               <!-- Paribahan Places -->
               <div
-                class="flex flex-col md:flex-row justify-between items-center gap-4 md:gap-6"
-              >
-                <button
-                  class="mybtn !text-base !font-medium !font-inter bg-[#0307120D] text-[#030712CC] transition-colors duration-300 ease-linear hover:bg-green/10 hover:text-green hover:border-green"
-                >
-                  Boarding Point - Laxmipur
-                </button>
-                <button
-                  class="mybtn !text-base !font-medium !font-inter bg-[#0307120D] text-[#030712CC] transition-colors duration-300 ease-linear hover:bg-green/10 hover:text-green hover:border-green"
-                >
-                  Dropping Point - Bogura</button
-                ><button
-                  class="mybtn !text-base !font-medium !font-inter bg-[#0307120D] text-[#030712CC] transition-colors duration-300 ease-linear hover:bg-green/10 hover:text-green hover:border-green"
-                >
-                  Est. Time - 11 Hour
-                </button>
-              </div>
+                id="paribahan-places"
+                class="flex flex-col md:flex-row justify-between items-center gap-4 md:gap-6 *:transition-colors *:duration-300 *:ease-linear"
+              ></div>
             </div>
           </div>
           <!-- Devider -->
@@ -537,156 +526,15 @@
             <div class="flex justify-center lg:justify-start">
               <!--  Seat List -->
               <div
+                id="seat-alphabet"
                 class="grid grid-rows-10 gap-4 justify-center items-center mr-4 *:cursor-pointer *:text-[#03071280] *:capitalize *:font-medium *:text-[18px]"
-              >
-                <strong id="A">A</strong>
-                <strong id="B">B</strong>
-                <strong id="C">C</strong>
-                <strong id="D">D</strong>
-                <strong id="E">E</strong>
-                <strong id="F">F</strong>
-                <strong id="G">G</strong>
-                <strong id="H">H</strong>
-                <strong id="I">I</strong>
-                <strong id="J">J</strong>
-              </div>
+              ></div>
 
               <!-- Seat List Items -->
               <div
                 id="sets"
                 class="grid grid-cols-2 md:grid-cols-4 justify-between items-center gap-4 *:bg-[#F7F8F8] *:text-[#03071280] *:capitalize *:py-4 *:px-8 *:rounded-xl *:font-medium *:text-[18px] *:font-inter *:transition-colors *:duration-300 *:ease-linear *:flex *:justify-center *:items-center *:text-center"
-              >
-                <!-- A Set -->
-                <button id="A1" class="set hover:bg-[#1DD100] hover:text-white">
-                  A1
-                </button>
-                <button id="A2" class="set hover:bg-[#1DD100] hover:text-white">
-                  A2
-                </button>
-                <button id="A3" class="set hover:bg-[#1DD100] hover:text-white">
-                  A3
-                </button>
-                <button id="A4" class="set hover:bg-[#1DD100] hover:text-white">
-                  A4
-                </button>
-                <!-- B Set -->
-                <button id="B1" class="set hover:bg-[#1DD100] hover:text-white">
-                  B1
-                </button>
-                <button id="B2" class="set hover:bg-[#1DD100] hover:text-white">
-                  B2
-                </button>
-                <button id="B3" class="set hover:bg-[#1DD100] hover:text-white">
-                  B3
-                </button>
-                <button id="B4" class="set hover:bg-[#1DD100] hover:text-white">
-                  B4
-                </button>
-                <!-- C Set -->
-                <button id="C1" class="set hover:bg-[#1DD100] hover:text-white">
-                  C1
-                </button>
-                <button id="C2" class="set hover:bg-[#1DD100] hover:text-white">
-                  C2
-                </button>
-                <button id="C3" class="set hover:bg-[#1DD100] hover:text-white">
-                  C3
-                </button>
-                <button id="C4" class="set hover:bg-[#1DD100] hover:text-white">
-                  C4
-                </button>
-                <!-- D Set -->
-                <button id="D1" class="set hover:bg-[#1DD100] hover:text-white">
-                  D1
-                </button>
-                <button id="D2" class="set hover:bg-[#1DD100] hover:text-white">
-                  D2
-                </button>
-                <button id="D3" class="set hover:bg-[#1DD100] hover:text-white">
-                  D3
-                </button>
-                <button id="D4" class="set hover:bg-[#1DD100] hover:text-white">
-                  D4
-                </button>
-                <!-- E Set -->
-                <button id="E1" class="set hover:bg-[#1DD100] hover:text-white">
-                  E1
-                </button>
-                <button id="E2" class="set hover:bg-[#1DD100] hover:text-white">
-                  E2
-                </button>
-                <button id="E3" class="set hover:bg-[#1DD100] hover:text-white">
-                  E3
-                </button>
-                <button id="E4" class="set hover:bg-[#1DD100] hover:text-white">
-                  E4
-                </button>
-                <!-- F Set -->
-                <button id="F1" class="set hover:bg-[#1DD100] hover:text-white">
-                  F1
-                </button>
-                <button id="F2" class="set hover:bg-[#1DD100] hover:text-white">
-                  F2
-                </button>
-                <button id="F3" class="set hover:bg-[#1DD100] hover:text-white">
-                  F3
-                </button>
-                <button id="F4" class="set hover:bg-[#1DD100] hover:text-white">
-                  F4
-                </button>
-                <!-- G Set -->
-                <button id="G1" class="set hover:bg-[#1DD100] hover:text-white">
-                  G1
-                </button>
-                <button id="G2" class="set hover:bg-[#1DD100] hover:text-white">
-                  G2
-                </button>
-                <button id="G3" class="set hover:bg-[#1DD100] hover:text-white">
-                  G3
-                </button>
-                <button id="G4" class="set hover:bg-[#1DD100] hover:text-white">
-                  G4
-                </button>
-                <!-- H Set -->
-                <button id="H1" class="set hover:bg-[#1DD100] hover:text-white">
-                  H1
-                </button>
-                <button id="H2" class="set hover:bg-[#1DD100] hover:text-white">
-                  H2
-                </button>
-                <button id="H3" class="set hover:bg-[#1DD100] hover:text-white">
-                  H3
-                </button>
-                <button id="H4" class="set hover:bg-[#1DD100] hover:text-white">
-                  H4
-                </button>
-                <!-- I Set -->
-                <button id="I1" class="set hover:bg-[#1DD100] hover:text-white">
-                  I1
-                </button>
-                <button id="I2" class="set hover:bg-[#1DD100] hover:text-white">
-                  I2
-                </button>
-                <button id="I3" class="set hover:bg-[#1DD100] hover:text-white">
-                  I3
-                </button>
-                <button id="I4" class="set hover:bg-[#1DD100] hover:text-white">
-                  I4
-                </button>
-                <!-- J Set -->
-                <button id="J1" class="set hover:bg-[#1DD100] hover:text-white">
-                  J1
-                </button>
-                <button id="J2" class="set hover:bg-[#1DD100] hover:text-white">
-                  J2
-                </button>
-                <button id="J3" class="set hover:bg-[#1DD100] hover:text-white">
-                  J3
-                </button>
-                <button id="J4" class="set hover:bg-[#1DD100] hover:text-white">
-                  J4
-                </button>
-              </div>
+              ></div>
             </div>
           </div>
 
@@ -907,18 +755,15 @@
         >
           <!-- Copyright -->
           <p class="text-[#FFFFFFB3]">
-            &copy;all rights reserved, M-Ticket services limited.
+            &copy; all rights reserved, M-Ticket services limited.
             <span id="year"></span>
           </p>
 
           <!-- Privacy Policy -->
           <ul
-            class="font-medium flex flex-wrap justify-between items-center gap-4"
-          >
-            <li><a href="#">Terms & condition</a></li>
-            <li><a href="#">Return & refund policy</a></li>
-            <li><a href="#">Privacy policy</a></li>
-          </ul>
+            id="footer-menu"
+            class="font-medium flex flex-wrap justify-between items-center gap-4 *:transition-all *:duration-300 *:ease-linear"
+          ></ul>
         </div>
       </div>
     </footer>
@@ -934,6 +779,10 @@
   <!-- Main Javascript File -->
   <script src="./js/navbar.js"></script>
   <script src="./js/ticket-registration.js"></script>
+  <script src="./js/best-offers.js"></script>
+  <script src="./js/paribahan-places.js"></script>
+  <script src="./js/seat.js"></script>
+  <script src="./js/footer-menu.js"></script>
   <script src="./js/utility.js"></script>
   <script src="./js/main.js"></script>
   <script src="./js/form.js"></script>
